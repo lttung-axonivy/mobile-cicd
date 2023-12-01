@@ -41,4 +41,4 @@ jobs:
           packageName: local.ltthome.hello
           releaseFiles: ${{steps.sign_app.outputs.signedReleaseFile}}
           mappingFile: ./build/app/outputs/mapping/release/mapping.txt
-          track: beta
+          track: internal
