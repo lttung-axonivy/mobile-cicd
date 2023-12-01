@@ -39,6 +39,7 @@ jobs:
         with:
           serviceAccountJsonPlainText: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           packageName: local.ltthome.hello
-          releaseFiles: ${{steps.sign_app.outputs.signedReleaseFile}}
+          releaseFiles: build/app/outputs/bundle/prodRelease/app-prod-release.aab
+          # ${{steps.sign_app.outputs.signedReleaseFile}}
           mappingFile: ./build/app/outputs/mapping/release/mapping.txt
           track: internal
