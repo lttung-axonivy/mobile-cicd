@@ -43,4 +43,3 @@ jobs:
           # ${{steps.sign_app.outputs.signedReleaseFile}}
           mappingFile: ./build/app/outputs/mapping/prodRelease/mapping.txt
           track: internal
-          status: draft
